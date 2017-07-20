@@ -14,7 +14,7 @@ function removePassengers() {
 	}
 }
 
-function getNewSpeed(newSpeed) {
+function setSpeed(newSpeed) {
 	if (this.passengers[0] === undefined) {
 		return;
 	}
@@ -37,5 +37,5 @@ export default {
 	passengers: [],
 	put: addPassengers,
 	land: removePassengers,
-	drive: getNewSpeed,
+	drive: setSpeed,
 };
